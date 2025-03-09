@@ -26,6 +26,7 @@ WORKDIR /app
 
 RUN uv python install 3.11
 RUN uv python pin 3.11
+RUN id
 
 COPY pyproject.toml pyproject.toml
 RUN uv sync --extra cpu --no-dev
