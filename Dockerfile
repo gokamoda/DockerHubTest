@@ -18,7 +18,7 @@ python3-icu \
 libicu-dev && \
 rm -rf /var/lib/apt/lists/*
 
-RUN id
+RUN id -nu 1000
 
 RUN useradd -m -s /bin/bash -u 1000 user
 USER user
