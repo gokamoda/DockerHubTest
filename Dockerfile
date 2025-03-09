@@ -19,7 +19,7 @@ libicu-dev && \
 rm -rf /var/lib/apt/lists/*
 
 
-RUN useradd -m -s /bin/bash user
+RUN useradd -m -u 1000 user
 USER user
 
 WORKDIR /app
